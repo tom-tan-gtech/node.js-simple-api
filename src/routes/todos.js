@@ -44,7 +44,7 @@ router.post('/', (req,res) => {
 
         req.app.db.get("todos").push(todo).write();
         
-        return res.sendStatus(201).send("Todo saved successfully");
+        return res.sendStatus(201);
 
     }catch(error){
 
